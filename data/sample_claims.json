@@ -1,1 +1,27 @@
 
+[
+  {
+    "claim_id": "CLM001",
+    "claim_type": "Motor Vehicle",
+    "claim_amount": 35000,
+    "received_at": "2026-09-18T16:00:00",
+    "recorded_at": "2026-09-21T10:30:00",
+    "status": "UNDER_REVIEW"
+  },
+  {
+    "claim_id": "CLM002",
+    "claim_type": "Household Contents",
+    "claim_amount": 18000,
+    "received_at": "2026-09-18T14:00:00",
+    "recorded_at": "2026-09-22T09:15:00",
+    "status": "UNDER_REVIEW"
+  },
+  {
+    "claim_id": "CLM003",
+    "claim_type": "Motor Vehicle",
+    "claim_amount": 12000,
+    "received_at": "2026-09-21T08:30:00",
+    "recorded_at": "2026-09-21T11:00:00",
+    "status": "UNDER_REVIEW"
+  }
+]
