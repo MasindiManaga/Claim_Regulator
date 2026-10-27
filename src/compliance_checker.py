@@ -1,18 +1,17 @@
 from datetime import datetime, timedelta
+import holidays
+
 
 
 def get_next_business_day(received_at):
-    """
-    Calculate the first business day after a claim is received.
+    # load South African public holidays
+    sa_holidays = holidays.country_holidays("ZA")
 
-    Prototype limitation:
-    Weekends are excluded, but South African public holidays
-    are not yet included in the calculation.
-    """
-
+    # start from the following day
     next_day = received_at + timedelta(days=1)
 
-    while next_day.weekday() >= 5:
+    # skip weekends and public holidays
+    while next_day.weekday() >= 5 or next_day.date() in sa_holidays:
         next_day += timedelta(days=1)
 
     return next_day
