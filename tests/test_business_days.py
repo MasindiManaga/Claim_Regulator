@@ -1,8 +1,10 @@
 
 from datetime import datetime
 
-from src.compliance_checker import get_next_business_day
-
+from src.compliance_checker import (
+    get_next_business_day,
+    check_claim_recording
+)
 
 def test_normal_weekday():
     received_at = datetime(2026, 10, 19, 9, 0)
