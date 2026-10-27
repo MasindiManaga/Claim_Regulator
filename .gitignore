@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AWS deployment files
+lambda_package/
+claimregulator_lambda.zip
+
+# Local Lambda backup
+src/lambda_function_backup.py
